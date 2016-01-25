@@ -8,7 +8,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_berlinstreetart'
+      target: 'feed_berlinstreetart',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_streetartberlin = new Instafeed({
@@ -18,7 +24,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_streetartberlin'
+      target: 'feed_streetartberlin',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_graffitiberlin = new Instafeed({
@@ -28,7 +40,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_graffitiberlin'
+      target: 'feed_graffitiberlin',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_berlingraffiti = new Instafeed({
@@ -38,7 +56,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_berlingraffiti'
+      target: 'feed_berlingraffiti',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_berlinwriters = new Instafeed({
@@ -48,7 +72,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_berlinwriters'
+      target: 'feed_berlinwriters',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   feed_berlinstreetart.run();
@@ -65,7 +95,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_munichstreetart'
+      target: 'feed_munichstreetart',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_streetartmunich = new Instafeed({
@@ -75,7 +111,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_streetartmunich'
+      target: 'feed_streetartmunich',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_graffitimunich = new Instafeed({
@@ -85,7 +127,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_graffitimunich'
+      target: 'feed_graffitimunich',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   feed_munichstreetart.run();
@@ -100,7 +148,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_barcelonastreetart'
+      target: 'feed_barcelonastreetart',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_streetartbarcelona = new Instafeed({
@@ -110,7 +164,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_streetartbarcelona'
+      target: 'feed_streetartbarcelona',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_graffitibarcelona = new Instafeed({
@@ -120,7 +180,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_graffitibarcelona'
+      target: 'feed_graffitibarcelona',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_barcelonagraffiti = new Instafeed({
@@ -130,7 +196,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_barcelonagraffiti'
+      target: 'feed_barcelonagraffiti',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   feed_barcelonastreetart.run();
@@ -146,7 +218,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_parisstreetart'
+      target: 'feed_parisstreetart',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_streetartparis = new Instafeed({
@@ -156,7 +234,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_streetartparis'
+      target: 'feed_streetartparis',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_graffitiparis = new Instafeed({
@@ -166,7 +250,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_graffitiparis'
+      target: 'feed_graffitiparis',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_parisgraffiti = new Instafeed({
@@ -176,7 +266,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_parisgraffiti'
+      target: 'feed_parisgraffiti',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   feed_parisstreetart.run();
@@ -192,7 +288,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_saopaulostreetart'
+      target: 'feed_saopaulostreetart',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_graffitisaopaulo = new Instafeed({
@@ -202,7 +304,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_graffitisaopaulo'
+      target: 'feed_graffitisaopaulo',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_saopaulograffiti = new Instafeed({
@@ -212,7 +320,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_saopaulograffiti'
+      target: 'feed_saopaulograffiti',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   feed_saopaulostreetart.run();
@@ -227,7 +341,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_brasiliastreetart'
+      target: 'feed_brasiliastreetart',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_graffitibrasilia = new Instafeed({
@@ -237,7 +357,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_graffitibrasilia'
+      target: 'feed_graffitibrasilia',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   var feed_mapagentil = new Instafeed({
@@ -247,7 +373,13 @@ $(document).ready(function(){
       sortBy: 'most-recent',
       limit: 60,
       clientId: 'e76947f6b07a4452a9f2f9fe6f5f8d6d',
-      target: 'feed_mapagentil'
+      target: 'feed_mapagentil',
+      template: '<img src="{{image}}" />',
+      success: function (data_retrieved) {
+        for(var n = 0; n < data_retrieved.data.length; n++){
+          saveFile(data_retrieved.data[n].images.standard_resolution.url)
+        }
+      }
   });
 
   feed_brasiliastreetart.run();
@@ -255,3 +387,22 @@ $(document).ready(function(){
   feed_mapagentil.run();
 
 });
+
+// Download a file form a url.
+function saveFile(url) {
+  // Get file name from url.
+  var filename = url.substring(url.lastIndexOf("/") + 1).split("?")[0];
+  var xhr = new XMLHttpRequest();
+  xhr.responseType = 'blob';
+  xhr.onload = function() {
+    var a = document.createElement('a');
+    a.href = window.URL.createObjectURL(xhr.response); // xhr.response is a blob
+    a.download = filename; // Set the file name.
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    delete a;
+  };
+  xhr.open('GET', url);
+  xhr.send();
+}
